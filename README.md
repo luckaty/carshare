@@ -36,7 +36,7 @@ Carshare is a PHP and MySQL-based web application that allows users to share car
 
 The project uses the following MySQL tables:
 
-```sql
+
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `first_name` char(30) NOT NULL,
