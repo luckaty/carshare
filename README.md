@@ -109,6 +109,7 @@ Installation
 - Update your profile and upload a profile picture.
 - Use the “Remember Me” option to stay logged in.
 
+
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests for improvements and bug fixes.
