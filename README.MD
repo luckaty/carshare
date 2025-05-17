@@ -1,73 +1,40 @@
-# CarShare
+# Carshare
 
-A full-featured PHP web application for carpooling and trip management. Users can sign up, create and join trips, manage profiles, and interact with a responsive and user-friendly interface.
-
-## 🚗 Overview
-
-CarShare allows users to efficiently share rides, manage trips, and collaborate on travel plans. The application supports user authentication, profile management, trip creation and editing, and note-taking features, all built with PHP, JavaScript, and Bootstrap for styling.
+Carshare is a PHP and MySQL-based web application that allows users to share car trips by posting and booking rides. It provides user authentication, trip management, and profile customization features.
 
 ---
 
-## 🔧 Features
+## Table of Contents
 
-- User registration and login system
-- Password reset and email activation workflow
-- Create, edit, and delete trips
-- View trip details dynamically
-- User profile with picture upload
-- Notes creation and management
-- Responsive UI using Bootstrap 3
-- Google Maps integration for trip routes (map.js)
-- AJAX-powered interactions for smooth user experience
+- [Features](#features)  
+- [File Structure](#file-structure)  
+- [Database Schema](#database-schema)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
 ---
 
-## 🗂️ Project Structure
+## Features
 
-carshare/
-├── index.php
-├── signup.php
-├── login.php
-├── logout.php
-├── mainpageloggedin.php
-├── profile.php
-├── profile.js
-├── javascript.js
-├── map.js
-├── mytrips.js
-├── css/
-│ ├── bootstrap.css
-│ └── bootstrap-theme.css
-├── profilepicture/
-├── uploads/
-├── connection.php
-├── activatenewemail.php
-├── forgot-password.php
-├── resetpassword.php
-├── storeresetpassword.php
-├── addtrips.php
-├── updatetrips.php
-├── deletetrips.php
-├── gettripdetails.php
-├── gettrips.php
-├── createnote.php
-├── deletenote.php
-├── loadnotes.php
-├── remember.php
-├── updateemail.php
-├── updatepassword.php
-├── updatepicture.php
-├── updateusername.php
-├── notes.txt # Database schema and API key
-└── README.md
+- User registration, login, and profile management  
+- Password reset and email activation  
+- Create, update, delete, and view car trips  
+- Search and filter trips by destination and date  
+- Profile picture uploads  
+- Persistent login with "Remember Me" functionality  
 
+---
+
+## File Structure
 
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
-The following tables are required for the application and are defined in `notes.txt`:
+The project uses the following MySQL tables:
 
 ```sql
 CREATE TABLE `users` (
@@ -123,28 +90,32 @@ CREATE TABLE carsharetrips (
   sunday CHAR(1)
 );
 
-🔑 Google Maps API Key
-You will need to add your own Google Maps API key in map.js for route visualization:
+Installation
+  1. Clone the repository
+  git clone https://github.com/luckaty/carshare.git
+  cd carshare
+  2. Set up your web server (Apache/Nginx) with PHP and MySQL support.
+  3. Create a MySQL database and import the schema from the SQL tables above.
+  4. Update connection.php with your database credentials.
+  5. Upload the project files to your server's web root or run locally with a local server (XAMPP, MAMP, etc.).
+
+## Usage
+
+- Register a new account via the signup page.
+- Activate your account via the email link.
+- Log in and create car trips to share.
+- View, update, or delete your trips.
+- Search for available trips posted by others.
+- Update your profile and upload a profile picture.
+- Use the “Remember Me” option to stay logged in.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests for improvements and bug fixes.
 
 
-// Replace the placeholder with your actual API key:
-const apiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
+## License
 
-💻 Technologies Used
-Backend: PHP 7+
-Frontend: HTML5, CSS3, JavaScript (Vanilla), Bootstrap 3
-Database: MySQL
-APIs: Google Maps API
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-🚀 Getting Started
-Installation & Setup
-Clone the repository:
 
-git clone https://github.com/luckaty/carshare.git
-Import the database schema from the SQL commands above.
-Configure your database connection in connection.php.
-Place the files in your web server directory.
-Open index.php to get started.
-
-🙋‍♂️ Contact
-Developed and maintained by luckaty
