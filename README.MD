@@ -137,7 +137,14 @@ Database: MySQL
 APIs: Google Maps API
 
 🚀 Getting Started
-(Installation instructions as before)
+Installation & Setup
+Clone the repository:
+
+git clone https://github.com/luckaty/carshare.git
+Import the database schema from the SQL commands above.
+Configure your database connection in connection.php.
+Place the files in your web server directory.
+Open index.php to get started.
 
 🙋‍♂️ Contact
 Developed and maintained by luckaty
