@@ -15,9 +15,6 @@ CREATE TABLE `users` (
 )
 
 
-AIzaSyCSDseJtxQ3kLgBv3PC2UA96cE9NlvmsRc
-
-
 
 CREATE TABLE  forgotpassword(
 `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
